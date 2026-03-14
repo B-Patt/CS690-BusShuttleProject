@@ -8,7 +8,7 @@ public class DataManagerTests
 
    public DataManagerTests()
     {
-        File.WriteAllText("stops.txt", "One" + Environment.NewLine + "Two" + Environment.NewLine + "Three" + Environment.NewLine + "Stop4" + Environment.NewLine + "Stop5");
+        File.WriteAllText("stops.txt", "One" + Environment.NewLine + "Two" + Environment.NewLine + "Three"+ Environment.NewLine + "Four" + Environment.NewLine + "Five");
         dataManager = new DataManager();        
     }
 
@@ -19,4 +19,5 @@ public class DataManagerTests
     dataManager.AddStop(new Stop("newStop"));
     Assert.Equal(6, dataManager.Stops.Count);   
     }
+
 }
